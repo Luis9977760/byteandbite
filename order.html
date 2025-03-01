@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="order-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Byte & Bite Ordering System</h1>
+
+        <div class="menu">
+            <h2>Sandwich</h2>
+
+            <div class="category">
+                <h3>Bread</h3>
+                <div class="items">
+                    <button class="item" data-name="White Bread" data-price="10">White Bread (₱10)</button>
+                    <button class="item" data-name="Whole Wheat" data-price="10">Whole Wheat (₱10)</button>
+                    <button class="item" data-name="Burger Bun" data-price="10">Burger Bun (₱10)</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Fillings</h3>
+                <div class="items">
+                    <button class="item" data-name="Egg" data-price="10">Egg (₱10)</button>
+                    <button class="item" data-name="Lettuce" data-price="10">Lettuce (₱10)</button>
+                    <button class="item" data-name="Luncheon Meat" data-price="15">Luncheon Meat (₱15)</button>
+                    <button class="item" data-name="Burger Patty" data-price="15">Burger Patty (₱15)</button>
+                    <button class="item" data-name="Tomato Slices" data-price="5">Tomato Slices (₱5)</button>
+                    <button class="item" data-name="Cheese Slices" data-price="10">Cheese Slices (₱10)</button>
+                </div>
+            </div>
+
+            <div class="category">
+                <h3>Spread</h3>
+                <div class="items">
+                    <button class="item" data-name="Tuna Mayo" data-price="10">Tuna Mayo (₱10)</button>
+                    <button class="item" data-name="Chicken Mayo" data-price="15">Chicken Mayo (₱15)</button>
+                    <button class="item" data-name="Ketchup Mayo" data-price="5">Ketchup Mayo (₱5)</button>
+                    <button class="item" data-name="Cheese Spread" data-price="10">Cheese Spread (₱10)</button>
+                    <button class="item" data-name="Chocolate Spread" data-price="15">Chocolate Spread (₱15)</button>
+                    <button class="item" data-name="Peanut Butter" data-price="5">Peanut Butter (₱5)</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>Drinks</h2>
+        <div class="category">
+            <h3>Flavors</h3>
+            <div class="items">
+                <button class="item" data-name="Orange" data-price="0">Orange</button>
+                <button class="item" data-name="Watermelon" data-price="0">Watermelon</button>
+                <button class="item" data-name="Mango" data-price="0">Mango</button>
+                <button class="item" data-name="Apple" data-price="0">Apple</button>
+                <button class="item" data-name="Melon" data-price="0">Melon</button>
+                <button class="item" data-name="Pomelo" data-price="0">Pomelo</button>
+            </div>
+        </div>
+
+        <h3>Sizes</h3>
+        <div class="items">
+            <button class="item size" data-size="Small" data-price="0">Small</button>
+            <button class="item size" data-size="Medium" data-price="10">Medium</button>
+            <button class="item size" data-size="Large" data-price="20">Large</button>
+        </div>
+
+        <h3>Add-ons</h3>
+        <div class="items">
+            <button class="item" data-name="Popping Boba" data-price="15">Popping Boba (₱15)</button>
+            <button class="item" data-name="Sliced Fruit" data-price="15">Sliced Fruit (₱15)</button>
+            <button class="item" data-name="Sago" data-price="5">Sago (₱5)</button>
+            <button class="item" data-name="Nata de Coco" data-price="10">Nata de Coco (₱10)</button>
+            <button class="item" data-name="Tapioca Pearls" data-price="10">Tapioca Pearls (₱10)</button>
+        </div>
+
+
+        <h2>Order Summary</h2>
+        <div id="cart"></div>
+        <p>Total: <span id="total">₱0</span></p>
+        <button id="clearCart">Clear Cart</button>
+        <button id="placeOrder">Place Order</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>BYTE & BiTE</h3>
+                <p>"Smart bites, Fast byte."</p>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:byteandbitebusiness@gmail.com">byteandbitebusiness@gmail.com</a></p>
+                <p>Instagram: <a href="https://www.instagram.com/byteandbite" target="_blank">@BYTE&BiTE</a></p>
+            </div>
+
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="BYTE & BiTE Logo">
+                <p>Powered by BYTE & BiTE</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 BYTE & BiTE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
